@@ -13,8 +13,8 @@ public class ProductoService {
     ProductoRepository productoRepository;
 
     // agregar - actualizar
-    public void saveProducto(ProductoModel productoModel){
-        productoRepository.save(productoModel);
+    public ProductoModel saveProducto(ProductoModel productoModel){
+        return productoRepository.save(productoModel);
     }
     // eliminar
     public void deleteProducto(ProductoModel productoModel){
